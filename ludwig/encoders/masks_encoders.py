@@ -59,7 +59,7 @@ class UnetEncoder(Encoder):
                 Shape: [batch x channels x height x width], type torch.uint8
         """
 
-        x1 = self.inc(x)
+        x1 = self.inc(inputs)
         x2 = self.down1(x1)
         x3 = self.down2(x2)
         x4 = self.down3(x3)
