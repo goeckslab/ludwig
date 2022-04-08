@@ -9,8 +9,8 @@ from ludwig.utils.unet_utils import OutConv
 logger = logging.getLogger(__name__)
 
 
-@register_decoder("masks", MASKS, default=True)
-class MasksDecoder(Decoder):
+@register_decoder("unet", MASKS, default=True)
+class UnetDecoder(Decoder):
     def __init__(
         self,
         num_classes: int,
