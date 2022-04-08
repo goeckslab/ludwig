@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 @register_decoder("masks", MASKS, default=True)
-class Masks(Decoder):
+class MasksDecoder(Decoder):
     def __init__(
         self,
         num_classes: int,
